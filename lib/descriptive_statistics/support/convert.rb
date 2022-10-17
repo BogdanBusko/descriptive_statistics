@@ -34,7 +34,7 @@ module DescriptiveStatistics
       when Set
         enumerable.to_a.each
       else
-        enumerable.each
+        Array.wrap(enumerable).each
       end
     end
 
