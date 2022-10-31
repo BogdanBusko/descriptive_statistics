@@ -1,5 +1,5 @@
 module DescriptiveStatistics
-  def variance(collection = self, &block)
+  def ds_variance(collection = self, &block)
     values = Support::convert(collection, &block)
     return DescriptiveStatistics.variance_empty_collection_default_value if values.empty?
 

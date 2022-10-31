@@ -1,6 +1,6 @@
 module DescriptiveStatistics
   # percent of cases that are at or below a score
-  def percentile_rank(p, collection = self, &block)
+  def ds_percentile_rank(p, collection = self, &block)
     values = Support::convert(collection, &block)
     return DescriptiveStatistics.percentile_rank_empty_collection_default_value if values.empty?
 

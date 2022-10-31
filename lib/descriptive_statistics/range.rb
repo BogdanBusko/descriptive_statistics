@@ -1,5 +1,5 @@
 module DescriptiveStatistics
-  def range(collection = self, &block)
+  def ds_range(collection = self, &block)
     values = Support::convert(collection, &block)
     return DescriptiveStatistics.range_empty_collection_default_value if values.empty?
 
