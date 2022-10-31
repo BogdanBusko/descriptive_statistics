@@ -4,6 +4,6 @@ module DescriptiveStatistics
     values = Support::convert(collection, &block)
     return DescriptiveStatistics.percentile_rank_empty_collection_default_value if values.empty?
 
-    return (((values.sort.rindex { |x| x <= p } || -1.0) + 1.0)) / values.number * 100.0
+    (((values.sort.rindex { |x| x <= p } || -1.0) + 1.0)) / values.ds_number * 100.0
   end
 end
