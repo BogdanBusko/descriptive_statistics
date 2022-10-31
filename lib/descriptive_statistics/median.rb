@@ -3,6 +3,6 @@ module DescriptiveStatistics
     values = Support::convert(collection, &block)
     return DescriptiveStatistics.median_empty_collection_default_value if values.empty?
 
-    values.percentile(50)
+    values.ds_percentile(50)
   end
 end
